@@ -12,12 +12,12 @@ churchInfo = element churchInfo {name, address, size, website}
     website = element website {exists, text}
         exists = attribute exists {"yes" | "no"}
 
-section = element section {type, h1*, h2*, h3*, p*}
+section = element section {type, mixed{(h1 | h2 | h3 | p)*}}
     type = attribute type {"context" | "content"}
-    p = element p {text*, mixed{(point | special)*}}
-        point = element point {text, num}
+    p = element p {special*, mixed{(point)*}}
+        special = attribute special {"highlight" | "tagline"}
+        point = element point {num, text}
             num = attribute num {xsd:integer}
-        special = element special {"highlight" | "tagline"}
     h1 = element h1 {text, num?}
     h2 = element h2 {text, num?}
     h3 = element h3 {text, num?}
