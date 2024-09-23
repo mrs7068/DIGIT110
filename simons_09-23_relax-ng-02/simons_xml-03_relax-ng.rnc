@@ -1,0 +1,23 @@
+start = xml
+xml = element xml {churchInfo, section+}
+
+churchInfo = element churchInfo {name, address, size, website}
+    name = element name {text}
+    address = element address{ln1, ln2?, ln3?}
+        ln1 = element ln1 {text}
+        ln2 = element ln2 {text}
+        ln3 = element ln3 {text}
+    size = element size {data}
+        data = attribute data {"small" | "medium" | "large" | "mega"}
+    website = element website {exists, text}
+        exists = attribute exists {"yes" | "no"}
+
+section = element section {type, h1*, h2*, h3*, p*}
+    type = attribute type {"context" | "content"}
+    p = element p {text*, mixed{(point | special)*}}
+        point = element point {text, num}
+            num = attribute num {xsd:integer}
+        special = element special {"highlight" | "tagline"}
+    h1 = element h1 {text, num?}
+    h2 = element h2 {text, num?}
+    h3 = element h3 {text, num?}

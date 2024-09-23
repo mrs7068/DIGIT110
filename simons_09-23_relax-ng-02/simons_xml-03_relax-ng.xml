@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Designed to catalog and compare information about the vision/mission statements of churches in the area-->
+<!--XML to be formed like a webpage (can/should be based on church's mission statement on their website, if applicable)-->
+
+<!--source: https://www.facerie.org/our-vision-and-beliefs -->
+
+<?xml-model href="simons_xml-03_relax-ng.rnc" type="application/relax-ng-compact-syntax"?>
+<!--still lots of errors with schema-->
+<xml>
+    <churchInfo>
+        <name>First Alliance Church</name>
+        <address>
+            <ln1>2939 Zimmerly Rd.</ln1>
+            <ln2>Erie, PA 16506</ln2>
+        </address>
+        <size data="large"/>
+        <website exists="yes">https://www.facerie.org</website>
+    </churchInfo>
+    <section type = "context">
+        <p>First Alliance Church has been ministering to Erie, Pennsylvania as part of the C&amp;MA
+            for the last 125+ years.</p>
+
+        <p>The US Alliance is part of a Christ-centered global movement more than 6 million strong.
+            Our Acts 1:8 family—inspired by Jesus’ love and empowered by His Spirit—is passionate to
+            bring the good news about Him to our neighborhoods and world.</p>
+    </section>
+
+    <section type = "content">
+        <h1>OUR VISION</h1>
+        <p special="highlight">To <point num="1">build</point>, <point num="2">equip</point>, and <point num="3"
+                >mobilize</point> followers of Jesus so that all nations may know him, to God’s
+            glory.</p>
+    </section>
+    <section type = "content">
+        <h2 num="1">BUILD:</h2>
+        <p>We function with the biblical understanding that God intends for all believers to grow in
+            spiritual maturity, and that God uses our church in the growth process (1 Corinthians
+            3:1–11).</p>
+
+        <p>True spiritual growth only happens through the power of the Holy Spirit as people
+            actively engage with the life-changing Word of God and actively engage with God in
+            prayer. It is our desire for believers to move toward age-appropriate biblical literacy
+            through expository preaching and teaching. We encourage relationships which are marked
+            by mature believers coming alongside and discipling new believers. </p>
+
+        <p special="tagline">THE FRUIT OF BUILDING IS CHRISTLIKENESS. </p>
+        <p>This is evidenced when people see the world through a gospel lens and daily live out the
+            gospel in real and tangible ways. Life decisions will be “gospel-shaped” and their
+            entire lives will be an act of worship. </p>
+
+        <h2 num="2">EQUIP:</h2>
+        <p>We function with the biblical understanding that our church is responsible for providing
+            the tools, training, and resources necessary to execute gospel mission and ministry
+            (Ephesians 4:11–12).</p>
+
+        <p>God has established certain roles in the church to prepare all believers for ministry. It
+            is our desire for believers to identify their God-given spiritual gifts and be given
+            opportunities to foster them. We encourage relationships which are marked by current
+            ministry leaders coming alongside and developing new leaders. </p>
+
+        <p special="tagline">THE FRUIT OF EQUIPPING IS SERVANTHOOD. </p>
+        <p>This is evidenced when people move from being merely consumers to active participants.
+            When they take what they have learned and put it into practice. </p>
+
+        <h2 num="3">MOBILIZE:</h2>
+        <p>We function with the biblical understanding that God calls all believers to mission, as
+            commanded through the Great Commission (Matthew 28:18–20).</p>
+
+        <p>It is our responsibility as a church to not only equip believers, but to prayerfully
+            develop strategies and provide opportunities for them to go and do ministry in their own
+            contexts and beyond! It is our desire to be a “sending” church where our members pursue
+            intentional, sacrificial, and long-term relationships with unbelievers, both locally and
+            globally, to love them like Christ and proclaim the gospel.</p>
+
+        <p special="tagline">THE FRUIT OF MOBILIZATION IS WINNING SOULS.</p>
+        <p>This is evidenced when believers go beyond the comforts of life to be the heart, hands,
+            and feet of Jesus—and, by the power of the Holy Spirit, unbelievers become committed
+            followers of Jesus Christ.</p>
+    </section>
+</xml>
