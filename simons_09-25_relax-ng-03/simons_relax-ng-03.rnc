@@ -1,0 +1,19 @@
+start = song
+song = element song {metadata, section}
+
+metadata = element metadata {title, artist, album, track, year, length, key, tempo, timeSignature, capo, dropD, scripture?}
+    title = element title {text}
+    artist = element artist {text}
+    album = element album {text}
+    track = element track {xsd:integer}
+    year = element year {xsd:gYear}
+    length = element length {xsd:duration}
+    key = element key {text}
+    tempo = element tempo {xsd:integer}
+    timeSignature = element timeSignature {text}
+    capo = element capo {xsd:integer | text}
+    dropD = element dropD {"yes" | "no"}
+    scripture = element scripture {text}
+    
+section = element section{text}
+    

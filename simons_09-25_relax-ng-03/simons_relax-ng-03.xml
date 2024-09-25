@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Source: my band's original song-->
+
+<!--I'm going to keep working on this later when I have more time, I want to at least get something submitted. There's a lot I know I can play with like indicating background vocals, how to link the sections with the scripture(s), etc.-->
+
+<?xml-model href="simons_relax-ng-03.rnc" type="application/relax-ng-compact-syntax"?>
+<song>
+    <metadata>
+        <title>Battle Song</title>
+        <artist>The Band 814</artist>
+        <album>Break Every Chain</album>
+        <track>4</track>
+        <year>2023</year>
+        <length>PT3M45S</length>
+        <key>D</key>
+        <tempo>157</tempo>
+        <timeSignature>4/4</timeSignature> <!--I would like to figure out how to format this in the schema so that it requires a number, then a slash, then another number-->
+        <capo>No Capo</capo>
+        <dropD>yes</dropD>
+        <scripture>Ephesians 6:10-18</scripture>
+    </metadata>
+    <section>
+        CHORUS
+        This is my battle song
+        I get down on my knees
+        When everything's just going wrong
+        You're all I need
+        This is my battle cry 
+        I'm a child of God
+        (ooh’s) I praise and lift my hands up high
+        Cause you are enough
+        
+        VERSE 1
+        When I'm backed up
+        In a corner
+        Getting warmer
+        And the battle starts to rage
+        Oh I might seem
+        Surrounded 
+        But I'm grounded 
+        In the power of your name
+        
+        CHORUS
+        This is my battle song
+        I get down on my knees
+        (ooh’s) When everything's just going wrong
+        You're all I need
+        This is my battle cry 
+        I'm a child of God
+        (ooh’s) I praise and lift my hands up high
+        Cause you are enough
+        
+        BRIDGE (x2) (Ephesians 6:10-18)
+        The belt of truth
+        The sword of the spirit 
+        This is my Foundation
+        The shield of faith
+        The darkness fears it
+        The helmet of salvation 
+        The breastplate of righteousness 
+        My defenses are in place 
+        No weapon formed against me shall
+        Prosper now I'm not afraid
+        
+        VERSE 1
+        When I'm backed up
+        In a corner
+        Getting warmer
+        And the battle starts to rage
+        Oh I might seem surrounded 
+        But I'm grounded 
+        In the power of your name
+        
+        TAG
+        You are all I need (yeah…)
+        You are the strength in me
+        
+        CHORUS
+        This is my battle song
+        I get down on my knees
+        (ooh’s) When everything's just going wrong
+        You're all I need
+        This is my battle cry 
+        I'm a child of God
+        (ooh’s) I praise and lift my hands up high
+        Cause you are enough
+        
+        (KEY CHANGE TO E)
+        
+        CHORUS 
+        This is my battle song
+        I get down on my knees
+        (ooh’s) When everything's just going wrong
+        You're all I need
+        This is my battle cry 
+        I'm a child of God
+        (ooh’s) I praise and lift my hands up high
+        Cause you are enough
+    </section>
+</song>
