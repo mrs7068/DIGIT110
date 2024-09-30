@@ -15,87 +15,101 @@
         <length>PT3M45S</length>
         <key>D</key>
         <tempo>157</tempo>
-        <timeSignature>4/4</timeSignature> <!--I would like to figure out how to format this in the schema so that it requires a number, then a slash, then another number-->
+        <timeSignature>
+            <beats>4</beats>
+            <subdivision>4</subdivision>
+        </timeSignature>
+        <!--I would've liked to come up with a way to use RegEx to make it easier for someone to enter a number, a slash, then another number (it would lock them into typing it in that format), but I tried and I couldn't figure it out-->
         <capo>No Capo</capo>
         <dropD>yes</dropD>
-        <scripture>Ephesians 6:10-18</scripture>
+        <scriptureMeta>Ephesians 6:10-18</scriptureMeta>
     </metadata>
-    <section>
-        CHORUS
-        This is my battle song
-        I get down on my knees
-        When everything's just going wrong
-        You're all I need
-        This is my battle cry 
-        I'm a child of God
-        (ooh’s) I praise and lift my hands up high
-        Cause you are enough
-        
-        VERSE 1
-        When I'm backed up
-        In a corner
-        Getting warmer
-        And the battle starts to rage
-        Oh I might seem
-        Surrounded 
-        But I'm grounded 
-        In the power of your name
-        
-        CHORUS
-        This is my battle song
-        I get down on my knees
-        (ooh’s) When everything's just going wrong
-        You're all I need
-        This is my battle cry 
-        I'm a child of God
-        (ooh’s) I praise and lift my hands up high
-        Cause you are enough
-        
-        BRIDGE (x2) (Ephesians 6:10-18)
-        The belt of truth
-        The sword of the spirit 
-        This is my Foundation
-        The shield of faith
-        The darkness fears it
-        The helmet of salvation 
-        The breastplate of righteousness 
-        My defenses are in place 
-        No weapon formed against me shall
-        Prosper now I'm not afraid
-        
-        VERSE 1
-        When I'm backed up
-        In a corner
-        Getting warmer
-        And the battle starts to rage
-        Oh I might seem surrounded 
-        But I'm grounded 
-        In the power of your name
-        
-        TAG
-        You are all I need (yeah…)
-        You are the strength in me
-        
-        CHORUS
-        This is my battle song
-        I get down on my knees
-        (ooh’s) When everything's just going wrong
-        You're all I need
-        This is my battle cry 
-        I'm a child of God
-        (ooh’s) I praise and lift my hands up high
-        Cause you are enough
-        
-        (KEY CHANGE TO E)
-        
-        CHORUS 
-        This is my battle song
-        I get down on my knees
-        (ooh’s) When everything's just going wrong
-        You're all I need
-        This is my battle cry 
-        I'm a child of God
-        (ooh’s) I praise and lift my hands up high
-        Cause you are enough
+
+    <section type="Chorus">
+        <ln>This is my <titleMention>battle song</titleMention></ln>
+        <ln>I get down on my knees</ln>
+        <ln>When everything's just going wrong</ln>
+        <ln>You're all I need</ln>
+        <ln>This is my battle cry</ln>
+        <ln>I'm a child of God</ln>
+        <ln><BGVs>(ooh’s)</BGVs> I praise and lift my hands up high</ln>
+        <ln>Cause you are enough</ln>
+    </section>
+
+    <section type="Verse 1">
+        <ln>When I'm backed up</ln>
+        <ln>In a corner</ln>
+        <ln>Getting warmer</ln>
+        <ln>And the battle starts to rage</ln>
+        <ln>Oh I might seem</ln>
+        <ln>Surrounded</ln>
+        <ln>But I'm grounded</ln>
+        <ln>In the power of your name</ln>
+    </section>
+
+    <section type="Chorus">
+        <ln>This is my <titleMention>battle song</titleMention></ln>
+        <ln>I get down on my knees</ln>
+        <ln><BGVs>(ooh's)</BGVs> When everything's just going wrong</ln>
+        <ln>You're all I need</ln>
+        <ln>This is my battle cry</ln>
+        <ln>I'm a child of God</ln>
+        <ln><BGVs>(ooh’s)</BGVs> I praise and lift my hands up high</ln>
+        <ln>Cause you are enough</ln>
+    </section>
+
+    <section type="Bridge" repeat="2x" scriptureSection="Ephesians 6:10-18">
+        <ln>The belt of truth</ln>
+        <ln>The sword of the spirit</ln>
+        <ln>This is my Foundation</ln>
+        <ln>The shield of faith</ln>
+        <ln>The darkness fears it</ln>
+        <ln>The helmet of salvation</ln>
+        <ln>The breastplate of righteousness</ln>
+        <ln>My defenses are in place</ln>
+        <ln>No weapon formed against me shall</ln>
+        <ln>Prosper now I'm not afraid</ln>
+    </section>
+
+    <section type="Verse 1">
+        <ln>When I'm backed up</ln>
+        <ln>In a corner</ln>
+        <ln>Getting warmer</ln>
+        <ln>And the battle starts to rage</ln>
+        <ln>Oh I might seem</ln>
+        <ln>Surrounded</ln>
+        <ln>But I'm grounded</ln>
+        <ln>In the power of your name</ln>
+    </section>
+
+    <section type="Tag">
+        <ln>You are all I need <BGVs>(yeah, yeah, yeah...)</BGVs></ln>
+        <ln>You are the strength in me</ln>
+    </section>
+
+    <section type="Chorus">
+        <ln>This is my <titleMention>battle song</titleMention></ln>
+        <ln>I get down on my knees</ln>
+        <ln><BGVs>(ooh's)</BGVs> When everything's just going wrong</ln>
+        <ln>You're all I need</ln>
+        <ln>This is my battle cry</ln>
+        <ln>I'm a child of God</ln>
+        <ln><BGVs>(ooh’s)</BGVs> I praise and lift my hands up high</ln>
+        <ln>Cause you are enough</ln>
+    </section>
+
+    <section type="Note">
+        <keyChange>E</keyChange>
+    </section>
+
+    <section type="Chorus">
+        <ln>This is my <titleMention>battle song</titleMention></ln>
+        <ln>I get down on my knees</ln>
+        <ln><BGVs>(ooh's)</BGVs> When everything's just going wrong</ln>
+        <ln>You're all I need</ln>
+        <ln>This is my battle cry</ln>
+        <ln>I'm a child of God</ln>
+        <ln><BGVs>(ooh’s)</BGVs> I praise and lift my hands up high</ln>
+        <ln>Cause you are enough</ln>
     </section>
 </song>

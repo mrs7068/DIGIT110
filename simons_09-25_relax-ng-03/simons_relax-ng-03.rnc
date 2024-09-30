@@ -1,7 +1,9 @@
-start = song
-song = element song {metadata, section}
 
-metadata = element metadata {title, artist, album, track, year, length, key, tempo, timeSignature, capo, dropD, scripture?}
+
+start = song
+song = element song {metadata, section+}
+
+metadata = element metadata {title, artist, album, track, year, length, key, tempo, timeSignature, capo, dropD, scriptureMeta?}
     title = element title {text}
     artist = element artist {text}
     album = element album {text}
@@ -10,10 +12,24 @@ metadata = element metadata {title, artist, album, track, year, length, key, tem
     length = element length {xsd:duration}
     key = element key {text}
     tempo = element tempo {xsd:integer}
-    timeSignature = element timeSignature {text}
+    timeSignature = element timeSignature {beats, subdivision}
+        beats = element beats {xsd:integer}
+        subdivision = element subdivision {xsd:integer}
     capo = element capo {xsd:integer | text}
     dropD = element dropD {"yes" | "no"}
-    scripture = element scripture {text}
+    scriptureMeta = element scriptureMeta {text}
     
-section = element section{text}
+section = element section{type, repeat?, scriptureSection?, mixed{(ln?, keyChange?)*}}
+    type = attribute type {"Verse" | "Verse 1" | "Verse 2" | "Verse 3" | "Verse 4" | "Verse 5" | "Verse 6" |
+        "Chorus" | "Chorus 1" | "Chorus 2" | "Chorus 3" | "Chorus 4" |
+        "Bridge" | "Bridge 1" | "Bridge 2" | "Bridge 3" | "Bridge 4" |
+        "Intro" | "Outro" | "Interlude" | "Instrumental" | "Vamp" | "Breakdown" | "Tag" | "Note" | text}
+    repeat = attribute repeat {"2x" | "3x" | "4x" | "5x" | "6x" | "7x" | "8x" | "9x" | "10x" | text}
+    scriptureSection = attribute scriptureSection {text}
+    ln = element ln {scriptureLine?, mixed{(titleMention?, BGVs?)*}}
+        scriptureLine = attribute scriptureLine {text}
+        titleMention = element titleMention {text}
+        BGVs = element BGVs {text}
+    keyChange = element keyChange {text}
+    
     
