@@ -1,0 +1,14 @@
+1. distinct-values(//cbml:panel/@characters)
+2. distinct-values(//cbml:panel/@characters ! tokenize(.)) - returns 23 items, much better
+3a. //cbml:panel[contains(@characters, 'drkelly')] - returns 5 items
+3b. //cbml:balloon[contains(@type, 'speech')] - I tried normalize-space on this, and I think I did it right, but XPath didn't like the upsidedown question mark being the first character
+4. //cbml:balloon ! string-length(.) - returns 71 items
+4a. max(//cbml:balloon ! string-length(.)) - returns 215 
+    max(//cbml:balloon ! normalize-space() ! string-length(.)) - returns 104
+4b. rookie answer: //cbml:balloon[string-length() = max(//cbml:balloon ! string-length(.))]
+    pro answer:    //cbml:balloon[normalize-space() ! string-length() = max(//cbml:balloon ! normalize-space() ! string-length())]
+4c. rookie answer: //cbml:balloon[string-length() = min(//cbml:balloon ! string-length(.))]
+    pro answer:    //cbml:balloon[normalize-space() ! string-length() = min(//cbml:balloon ! normalize-space() ! string-length())]
+5a. //cbml:panel[.//note[contains(., 'skull')]] - returns 1 item
+5b. //div[//cbml:balloon[contains(., 'NO')]] - returns 20 items, so this just returns all div tags
+    //div[.//cbml:balloon[contains(., 'NO')]] - returns 10 items, so this returns only the div tags that contain a cbml:balloon

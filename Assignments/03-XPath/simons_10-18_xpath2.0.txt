@@ -1,0 +1,12 @@
+1. //div[@type='panelGrp']
+2. //div[@type='panelGrp']/cbml:panel
+3. 
+    - (//div[@type='panelGrp'])[2] - 1 result
+    - (//div[@type='panelGrp'])[2]/cbml:panel - 2 results
+4. //cbml:panel/@characters - 53 results
+5. //cbml:panel[@characters='#narrator'] - 52 results
+6. 
+    - //floatingText - 41 results
+    - possibly text that appears within the images of the comic
+    - //cbml:panel[floatingText] - 26 results
+    - count(//cbml:panel[floatingText]) - returns 26

@@ -1,0 +1,17 @@
+1. //body/div[@type='historical_people'] - returns 1 item
+2b. //body/div[@type='historical_people'] /* - returns sortKey="histOrgs" & sortKey="histPersons"
+2c. //body/div[@type='Mitford_Team'] - returns 1 item
+    //body/div[@type='Mitford_Team'] /* - returns sortKey="Mitford_Team" & sortKey="archives"
+2c (again). count(//div/*) - returns 20
+3a. count(//list[@sortKey='animals']/item) - returns 67
+3b. //list[@sortKey='animals']/item [last()] - returns wren_crested
+3c. //list[@sortKey='plants']/item [5] - apple_tree
+3d. //list[@sortKey='plants']/item [position() <= 6] - returns first 6 (acacia, aconite, alder, anemone, apple_tree, and apricot_tree)
+4.  //person/occupation[1] returns the first job for each person; (//person/occupation)[1] returns first job in the document
+5a. count(//person) - returns 1503
+5b. //person[@sex] - returns 1378, so no.
+5c. count(//person[@sex]) div count(//person) - returns 0.916833000665335995
+    count(//person[@sex]) div count(//person)*100 - returns 91.68%
+5d. count(//person[@sex="f"]) - returns 409
+    count(//person[@sex="f"]) div count(//person[@sex]) - returns 0.296806966618287373
+    count(//person[@sex="f"]) div count(//person[@sex])*100 - returns 29.68%

@@ -1,0 +1,9 @@
+1. //note/.. - returns mostly cbml:panel elements, but there's also a cbml:balloon element that's parent to a note element.
+2. count(//note) - returns 44
+3. 
+    - //floatingText!normalize-space()!string-length()
+    - //floatingText!normalize-space()!string-length() => max() - returns 41
+    - //floatingText!normalize-space()!string-length() => min() - returns 1
+    - I didn't get this far :(
+    - distinct-values(//cbml:panel/@characters) - 2 results
+    - distinct-values(//floatingText/@subtype) - 9 results

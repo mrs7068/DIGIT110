@@ -1,0 +1,17 @@
+1a. //div/count(*) - counts the child elements in each div element
+1b. //div/*/count(*) - counts the child elements in all child elements of each div
+2. max(//div/*/count(*)) - returns 1071
+   min(//div/*/count(*)) - returns 3
+3. //div[count(*) = max(//div/count(*))]
+3C. //div[count(*) = max(distinct-values(//div/count(*)))] - I'm not sure I fully understood what this was asking, because I don't think adding distinct-values really changes anything
+4. distinct-values(//occupation/@type) - returns 15 unique items
+4b. count(distinct-values(//occupation/@type)) - returns 15
+5a. //occupation[@type='artist'] - returns 105 items
+5b. //person[occupation[@type='artist']] - returns 59 items
+5c. //person[@sex='f' and occupation[@type='artist']] - returns 6 items from previous list with sex="f"
+5d. //person[occupation[@subtype='engraver']] - returns 18 items
+5e. //person[occupation[@subtype='engraver'] and (birth/@when='1787')] - xml:id="Finden_Wm"
+5f. //person[occupation/@subtype='engraver']/birth/@when - returns 17 items
+5g. min(//person[occupation/@subtype='engraver']/birth/@when ! (substring(., 1, 4) || .) - this is the only thing I could fenagle to work... but I don't like it. But it got 1667
+6a. //*/name() - returns 40784 items (quite quickly actually)
+6b. count(distinct-values(//*/name())) - returns 78
