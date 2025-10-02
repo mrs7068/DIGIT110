@@ -6,7 +6,7 @@
         <meta name="author" content="Michael Simons" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="webstyle.css" />
-        <script type="text/javascript" src="interact.js">/*Very crude and probably inefficient experiments*/</script>
+        <script type="text/javascript" src="interact-ver2.js"></script>
     </head>
     <!--This page is published at https://mrs7068.github.io/DIGIT110/ -->
     <body id="body">
@@ -26,6 +26,16 @@
             <li id="li2">Bananas</li>
             <li id="li3">Blueberries</li>
         </ul>
+        <fieldset>
+            <legend>Options</legend>
+            <label>
+                <input type="checkbox" id="boldToggle"/>Bold text when fruit is selected
+            </label>
+            <br />
+            <label>
+                <input type="checkbox" id="colorToggle"/>Change background color when fruit is selected
+            </label>
+        </fieldset>
         <p>We are at <a href="https://behrend.psu.edu/">Penn State Erie, The Behrend
             College</a>.</p>
         <!--ebb: The <a> element above is showing how to make an *absolute* file association with a literal, full website address. 
